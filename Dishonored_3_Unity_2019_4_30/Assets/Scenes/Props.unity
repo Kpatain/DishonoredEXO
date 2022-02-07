@@ -121,77 +121,72 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &8285052765365759597
+--- !u!1001 &1566891
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1175676772055328605, guid: 26f7a69d8221d2145b98e3cef134a57e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 154.8
+      value: 295.9
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.6
+      value: 3.7
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -141
+      value: -100.4
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8462495581403719969, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 3489933014327687813, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9095866388053095323, guid: 26f7a69d8221d2145b98e3cef134a57e,
+    - target: {fileID: 4261930521683599423, guid: ab0ac3b6cf12d72468acdc72ffe61d41,
         type: 3}
       propertyPath: m_Name
-      value: cathedrale
+      value: tonneau
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 26f7a69d8221d2145b98e3cef134a57e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ab0ac3b6cf12d72468acdc72ffe61d41, type: 3}
