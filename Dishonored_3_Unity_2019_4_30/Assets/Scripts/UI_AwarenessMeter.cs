@@ -120,6 +120,7 @@ public class UI_AwarenessMeter : MonoBehaviour {
 
                     if (awarenessSound == 1)
                     {
+                        AI_Behaviour.seen = true;
                         GameObject MySFX_AudioSource = Instantiate(SFX_AudioSource, transform.position, Quaternion.identity);
                         MySFX_AudioSource.GetComponent<AudioSource>().clip = SFX_Awareness_Red;
                         MySFX_AudioSource.GetComponent<AudioSource>().spatialBlend = 0;

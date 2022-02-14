@@ -916,7 +916,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-11076
+  m_Name: pb_Mesh-8390
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1773,6 +1773,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 168227966}
+    - target: {fileID: 114354641749797040, guid: 6dc87429bb5060148aa64bc5c1a6388e,
+        type: 3}
+      propertyPath: idling
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114354641749797040, guid: 6dc87429bb5060148aa64bc5c1a6388e,
         type: 3}
       propertyPath: patrol
@@ -3041,7 +3046,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-11124
+  m_Name: pb_Mesh-8438
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

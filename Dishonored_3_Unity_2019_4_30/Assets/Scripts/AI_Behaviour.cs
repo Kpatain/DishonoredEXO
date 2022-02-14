@@ -9,6 +9,7 @@ public class AI_Behaviour : MonoBehaviour
 {
 
     public bool patrol;
+    public bool idling;
     public Transform defaultposition;
     public Transform stockposition;
     public Transform defaultdestination;
@@ -72,7 +73,7 @@ public class AI_Behaviour : MonoBehaviour
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
         playerPos = GameObject.Find("RigidBodyFPSController").GetComponent<Transform>();
         myBlade = transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/MyBlade").GetComponent<Transform>();
-        
+        if (idling) { anim.Play("Idle"); }
         if (patrol) {  SetDestination(defaultdestination, false); }
     }
 
