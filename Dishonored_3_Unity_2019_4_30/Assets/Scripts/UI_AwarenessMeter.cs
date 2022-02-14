@@ -165,7 +165,7 @@ public class UI_AwarenessMeter : MonoBehaviour {
             if (timerAwareness >= duractionIAChasePlayer)
             {
                 if (AI_Behaviour.awarenessMeter_Red > 0)
-                {
+                {             
                     AI_Behaviour.awarenessMeter_Red = Mathf.Clamp01(AI_Behaviour.awarenessMeter_Red - Time.deltaTime * 0.5f);
                     UI_AwarenessMeter_Red.fillAmount = AI_Behaviour.awarenessMeter_Red;
                 }

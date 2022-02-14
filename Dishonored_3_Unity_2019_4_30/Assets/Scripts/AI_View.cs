@@ -38,6 +38,8 @@ public class AI_View : MonoBehaviour {
                         AI_Behaviour.distanceToPlayer = hitPlayer.distance;
                         AI_Behaviour.angleToPlayer = Vector3.Angle(-transform.up, (camPlayer.position - transform.position));
                         AI_Behaviour.isSeeingPlayer = true;
+                        AI_Behaviour.seen = true;
+                        
                         AI_Behaviour.targetLookAt = camPlayer;
                     }
 

@@ -8,6 +8,13 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class AI_Behaviour : MonoBehaviour
 {
 
+    public bool patrol;
+    public Transform defaultposition;
+    public Transform stockposition;
+    public Transform defaultdestination;
+    public bool seen = false;
+
+
     public bool isAvailableForScripting = true;
     public bool isDead;
     public bool isUnconscious;
@@ -65,6 +72,8 @@ public class AI_Behaviour : MonoBehaviour
         controller = GameObject.Find("RigidBodyFPSController").GetComponent<RigidbodyFirstPersonController>();
         playerPos = GameObject.Find("RigidBodyFPSController").GetComponent<Transform>();
         myBlade = transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/MyBlade").GetComponent<Transform>();
+        
+        if (patrol) {  SetDestination(defaultdestination, false); }
     }
 
 
@@ -113,13 +122,28 @@ public class AI_Behaviour : MonoBehaviour
 
         if (!isDead && !isUnconscious && !isKilling && !isChoking && !knockoutByChoke)
         {
+            if (patrol && reachingDestination && !seen) {
+                stockposition= defaultdestination;
+                defaultdestination = defaultposition;
+                PatrolWait();
+               
+                SetDestination(defaultdestination, false);
+                defaultposition = stockposition;
+                stockposition = null;
+               
+            }
             CheckDestination();
             CheckStateForCombat();
         }
     }
 
 
-
+    IEnumerator PatrolWait()
+    {
+        
+        yield return new WaitForSeconds(0.5f);
+        
+    }
 
     void CheckState()
     {
@@ -293,6 +317,7 @@ public class AI_Behaviour : MonoBehaviour
 
     public void ViewPlayer(int value)
     {
+        
         viewPlayer += value;
     }
 
