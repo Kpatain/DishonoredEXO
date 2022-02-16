@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   d: 2
-  objectType: 0
+  objectType: 1
   allAnimations: []
   currentState: 0
   stringInteraction: 
@@ -18893,53 +18893,25 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 6c02000005000000040000006a0200006b0200006d020000
-  m_SelectedEdges:
-  - a: 2474
-    b: 2475
-  - a: 2476
-    b: 2474
-  - a: 2475
-    b: 2480
-  - a: 2480
-    b: 2476
-  - a: 2470
-    b: 2471
-  - a: 2471
-    b: 2472
-  - a: 2472
-    b: 2470
-  - a: 2464
-    b: 2465
-  - a: 2465
-    b: 2466
-  - a: 2466
-    b: 2464
-  - a: 2461
-    b: 2462
-  - a: 2462
-    b: 2460
-  - a: 2463
-    b: 2461
-  - a: 2460
-    b: 2463
-  - a: 2468
-    b: 2469
-  - a: 2469
-    b: 2467
-  - a: 2473
-    b: 2468
-  - a: 2467
-    b: 2473
-  - a: 2478
-    b: 2479
-  - a: 2479
-    b: 2477
-  - a: 2481
-    b: 2478
-  - a: 2477
-    b: 2481
-  m_SelectedVertices: aa090000ab090000ac090000b0090000a6090000a7090000a8090000a0090000a1090000a20900009c0900009d0900009e0900009f090000a3090000a4090000a5090000a9090000ad090000ae090000af090000b1090000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
+--- !u!114 &6839721743690290194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312878839433625020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f286ccf05761fa343b0f7ef9508d5c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainHealth: 1
+  maxHp: 0
+  FX_Blood: {fileID: 198539716983675826, guid: 6dc87429bb5060148aa64bc5c1a6388e, type: 3}
+  hp: 0
 --- !u!1001 &2231851962056065261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18955,17 +18927,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1f33da652eeb7884f8414bef30ff3c25,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.142442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f33da652eeb7884f8414bef30ff3c25,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.142442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f33da652eeb7884f8414bef30ff3c25,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.142442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f33da652eeb7884f8414bef30ff3c25,
         type: 3}
