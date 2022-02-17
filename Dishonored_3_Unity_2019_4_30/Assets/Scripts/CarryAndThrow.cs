@@ -12,6 +12,7 @@ public class CarryAndThrow : MonoBehaviour {
     public GameObject blade;
     public GameObject objectCarrying;
 
+
     Transform previousParent;
     float powerThrow = 1;
     Text text_Drop;
@@ -65,9 +66,12 @@ public class CarryAndThrow : MonoBehaviour {
 
         if (isCarrying && ((Input.GetButtonDown("Throw") || Input.GetAxis("Throw") > 0.2f) || (Input.GetButtonDown("Drop") && !interaction.isInteracted)))
         {
+            Debug.Log(objectCarrying);
             objectCarrying.GetComponent<Rigidbody>().isKinematic = false;
             objectCarrying.GetComponent<Rigidbody>().useGravity = true;
             objectCarrying.GetComponent<Collider>().isTrigger = false;
+            objectCarrying.GetComponentInChildren<Rigidbody>().useGravity = true;
+
             objectCarrying.transform.parent = previousParent;
             previousParent = null;
             bladeScript.buttonAxis_Attack = true;
@@ -78,6 +82,7 @@ public class CarryAndThrow : MonoBehaviour {
 
             text_Drop.text = "";
             text_Throw.text = "";
+           
         }
     }
 
@@ -135,6 +140,7 @@ public class CarryAndThrow : MonoBehaviour {
                         hitCarry.collider.isTrigger = true;
 
                         objectCarrying = hitCarry.transform.gameObject;
+                      
                         isCarrying = true;
                         blade.SetActive(false);
 
